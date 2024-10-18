@@ -1,5 +1,5 @@
 # Tolkien Explorer
-[![Cover Tolkien Explorer](https://i.imgur.com/MlfXaSt.jpeg)]
+![Cover Tolkien Explorer](https://i.imgur.com/MlfXaSt.jpeg)
 Tolkien Explorer é dedicado às obras de J.R.R. Tolkien, mergulhando no incrível mundo da Terra-média e explorando histórias e personagens dos seus livros, como O Senhor dos Anéis, O Hobbit e O Silmarillion.
 
 ## Tecnologias utilizadas
