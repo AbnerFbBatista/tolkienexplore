@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/index.js" defer></script>
+    <title>Tolkien Explorer</title>
+  </head>
+
+  <body>
+    <main class="hero">
+      <header>
+        <div class="header-content">
+          <img
+            src="/assets/icon/logo.svg"
+            alt="Logo Tolkien Explorer"
+            class="logo"
+          />
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#footer">Newsletter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="hero-content">
+        <p class="hero-description">
+          Tolkien Explorer is dedicated to the works of
+          <strong>J.R.R. Tolkien</strong>, delving into the incredible world of
+          Middle-earth and exploring stories and characters from his books, such
+          as <strong>The Lord of the Rings</strong>,
+          <strong>The Hobbit</strong> and <strong>The Silmarillion.</strong>
+        </p>
+        <input type="text" id="search-input" placeholder="Search..." />
+        <p class="search-description">
+          Search for Books, Movies and Characters
+        </p>
+      </div>
+    </main>
+
+    <section class="list">
+      <div class="list-content">
+        <div class="filter-buttons">
+          <button class="btn-active" data-filter="all">All</button>
+          <button data-filter="book">Books</button>
+          <button data-filter="movie">Movies</button>
+          <button data-filter="character">Character</button>
+        </div>
+
+        <div id="content-list"></div>
+        <!-- Div para a lista de itens -->
+        <!-- Controles de navegação (paginação) -->
+
+        <div class="pagination">
+          <button id="prev-btn">Prev</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <section class="about-author-section" id="about">
+        <div class="about-container">
+          <div class="about-left">
+            <h2>About Us</h2>
+            <p>
+              The Fellowship of the Ring is the first book in J.R.R. Tolkien's
+              The Lord of the Rings trilogy. It follows Frodo Baggins as he
+              embarks on a perilous journey to destroy the One Ring. Alongside
+              eight companions, including Aragorn, Gandalf, and Legolas, they
+              form the Fellowship, tasked with protecting Frodo and ensuring the
+              Ring's destruction in the fires of Mount Doom. The story explores
+              themes of friendship, sacrifice, and the struggle between good and
+              evil.
+            </p>
+          </div>
+          <div class="about-right">
+            <img
+              src="/assets/img/about-cover.png"
+              alt="Fellowship of the Ring"
+            />
+          </div>
+        </div>
+
+        <div class="author-container">
+          <div class="author-left">
+            <h2>Author</h2>
+            <img src="/assets/img/jrr_tolkien.avif" alt="J.R.R. Tolkien" />
+          </div>
+          <div class="author-right">
+            <p>
+              John Ronald Reuel Tolkien,3 January 1892 – 2 September 1973 was an
+              English writer and philologist. He was the author of the high
+              fantasy works The Hobbit and The Lord of the Rings.
+              <br /><br />
+              From 1925 to 1945, Tolkien was the Rawlinson and Bosworth
+              Professor of Anglo-Saxon and a Fellow of Pembroke College, both at
+              the University of Oxford. He then moved within the same university
+              to become the Merton Professor of English Language and Literature
+              and Fellow of Merton College, and held these positions from 1945
+              until his retirement in 1959. Tolkien was a close friend of C. S.
+              Lewis, a co-member of the informal literary discussion group The
+              Inklings. He was appointed a Commander of the Order of the British
+              Empire by Queen Elizabeth II on 28 March 1972.
+            </p>
+            <button class="read-more-btn">
+              <a
+                href="https://en.wikipedia.org/wiki/J._R._R._Tolkien"
+                target="_blank"
+                >Read More</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <div class="container-left">
+          <img
+            src="/assets/icon/logo.svg"
+            alt="Logotipo escrito Tolkien Explorer"
+            class="logo"
+          />
+          <p>
+            The Small encyclopedia dedicated to J.R.R. Tolkien and The Lord of
+            the Rings.
+          </p>
+        </div>
+        <div class="container-left">
+          <h2>Newsletter</h2>
+          <p>
+            Newsletter for J.R.R. Tolkien fans, bringing curiosities, analysis
+            and news about Middle-earth and his works.
+          </p>
+          <div class="input-newsletter">
+            <form action="">
+              <div class="input-wrapper">
+                <input type="email" placeholder="myaemail@email.com" />
+                <i class="fas fa-search"><img src="/assets/icon/email.svg" alt="" /></i>
+              </div>
+              <button type="submit" class="send">Send</button>
+            </form>
+          </div>          
+        </div>
+      </div>
+      <p class="author">
+        Developed by
+        <a href="https://www.linkedin.com/in/abner-batista/" target="_blank"
+          >Abner Batista</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

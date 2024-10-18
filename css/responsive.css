@@ -1,0 +1,138 @@
+@media (max-width: 300px) {
+  .header-content {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .hero-content {
+    width: 90%;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-content {
+    width: 90%;
+  }
+  .logo {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  nav ul li a {
+    font-size: 24px;
+  }
+  .hero-description {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-content {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 110px 0 18px 0;
+    gap: 50px;
+    max-width: 840px;
+    font-family: "Montserrat";
+    color: #d9d9d9;
+    border-bottom: #30313f solid 3px;
+  }
+  .send {
+    width: 50%;
+    font-size: 18px;
+  }
+  form {
+    gap: 10px;
+    display: block;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #content-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #list-content,
+  .filter-buttons {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  #content-list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  #content-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .author-container {
+    margin: 0 auto;
+    display: inline;
+    padding: 20px;
+  }
+  .author-left {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .author-left p {
+    font-size: 20px;
+  }
+  .author-right {
+    padding-top: 20px;
+  }
+  .author-right p {
+    width: 90%;
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .read-more-btn a {
+    margin: 0px;
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+  .read-more-btn {
+    margin-left: 15px;
+    width: 90%;
+  }
+  .about-left p {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-size: 32px;
+}
+@media (max-width: 600px) {
+  .input-newsletter input {
+    font-size: 14px;
+    padding: 8px 35px 8px 8px;
+  }
+  .input-wrapper i {
+    right: 8px;
+  }
+  .input-newsletter button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .input-newsletter input {
+    font-size: 15px;
+    padding: 9px 38px 9px 9px;
+  }
+  .input-wrapper i {
+    right: 9px;
+  }
+  .input-newsletter button {
+    font-size: 15px;
+    padding: 9px 14px;
+  }
+}

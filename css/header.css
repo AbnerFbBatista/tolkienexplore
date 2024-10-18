@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    font-family: 'Lora';
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  .menu li.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFB640;
+    position: absolute;
+  }

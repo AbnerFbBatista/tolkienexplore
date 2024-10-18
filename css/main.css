@@ -1,0 +1,306 @@
+/* Seção Hero */
+.hero {
+  background: url("/assets/img/background.png") no-repeat center center/cover;
+  padding: 30px 0 60px 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  max-width: 840px;
+  text-align: center;
+}
+.hero-description {
+  padding-top: 60px;
+  max-width: 604px;
+  font-family: "Montserrat", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #eeeeee;
+  margin-bottom: 60px;
+}
+#search-input {
+  font-family: "";
+  background-color: #ffb640;
+  text-align: center;
+  color: #604e26;
+  padding: 15px 20px;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  background-image: url("/assets/icon/lupa-icon.svg");
+  background-position: 70px center;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+#search-input::placeholder {
+  color: #604e26;
+  font-family: "Montserrat";
+}
+#search-input:focus-visible {
+  outline: none;
+}
+#search-input:hover {
+  background-color: #ffb640;
+  transition: 2ms;
+}
+.search-description {
+  font-family: "Inter";
+  height: 14px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #737373;
+}
+/* Filtro botões */
+.filter-buttons button {
+  display: inline;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  border-radius: 50px;
+  background: rgba(19, 19, 21, 0.2);
+  border: 1px solid #373737;
+  margin-right: 5px;
+  font-family: 'Inknut Antiqua", serif';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  color: #ffb640;
+  cursor: pointer;
+}
+.filter-buttons button:hover {
+  transition: 300ms;
+  background: #ffb640;
+  color: #604e26;
+}
+.filter-buttons button.btn-active {
+  background-color: #ffb640;
+  color: #604e26;
+}
+/* Listagem */
+.list {
+  background-color: #1a1a20;
+  padding-bottom: 100px;
+}
+.list-content {
+  margin: 0 auto;
+  max-width: 840px;
+}
+#content-list {
+  min-height: 200px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+.item {
+  padding: 25px 10px 10px 10px;
+  background-color: #323240;
+  height: 150px;
+  gap: 15px;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* para garantir que todos os cards tenham a mesma altura */
+  box-sizing: border-box;
+}
+.item p {
+  font-family: "Lora", serif;
+  color: #ffb640;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.item p::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #bcae8f;
+  margin-top: 5px;
+}
+.item h2 {
+  font-family: "Akatab";
+  font-weight: 300;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+}
+.item button {
+  text-align: center;
+  padding: 5px 15px;
+  justify-content: end;
+  font-family: "Lora";
+  color: #604e26;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #ffb640;
+  width: 100%;
+  border: none;
+  border-bottom: #604e26 solid 2px;
+  align-self: flex-end;
+}
+/* Botões Prev e Next da Listagem */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination button {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background-color: #353542;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 3px;
+}
+.pagination button:disabled {
+  cursor: default;
+  background-color: #eeeeee;
+  color: #878787;
+}
+
+/* About Us */
+.about-author-section {
+  background: url("/assets/img/background-about.jpg") center top no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px 0 160px 0;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.author-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  align-items: top;
+  max-width: 840px;
+  margin: 0 auto;
+}
+.about-left,
+.author-left {
+  flex: 1;
+}
+.about-left h2,
+.author-left h2 {
+  text-align: left;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.about-left h2::after,
+.author-left h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #ffb640;
+  position: absolute;
+}
+.about-left p,
+.author-right p {
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eeeeee;
+}
+.author-right p {
+  padding-left: 30px;
+}
+.read-more-btn {
+  margin-left: 30px;
+}
+.about-right img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+}
+
+.author-left img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
+.read-more-btn {
+  width: 170px;
+  margin-top: 20px;
+  background-color: #ffb64000;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  border: #ffb640 2px solid;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.read-more-btn a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.read-more-btn a:hover {
+  background-color: #ffb640;
+  color: #604E26;
+  transition: 500ms;
+}
+@media (max-width: 768px) {
+  .about-container,
+  .author-container {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right,
+  .author-left,
+  .author-right {
+    margin-bottom: 20px;
+  }
+  .about-container {
+    width: 90%;
+  }
+  .about-right .about-left img {
+    width: 20px;
+  }
+}
+.about-author-section::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("/assets/img/ring-detail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
